@@ -1,23 +1,21 @@
 <script setup lang="ts">
 import { useLanguageStore } from '@/stores/language'
 import { computed } from 'vue'
+import { useRouter } from 'vue-router'
 
 const languageStore = useLanguageStore()
-
 const currentLanguage = computed(() => languageStore.currentLanguage)
 const $t = languageStore.t
+const router = useRouter()
 
 const changeLanguage = (lang: string) => {
   languageStore.changeLanguage(lang)
 }
 
-const scrollToServices = () => {
-  const servicesSection = document.querySelector('#services')
-  if (servicesSection) {
-    servicesSection.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
+const goServices = () => {
+  const el = document.getElementById('services')
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 }
 </script>
@@ -32,10 +30,10 @@ const scrollToServices = () => {
           <span class="subtitle">{{ $t('subtitle') }}</span>
         </div>
         <nav class="nav">
-          <a href="#home" class="nav-link active">{{ $t('nav.home') }}</a>
-          <a href="#services" class="nav-link">{{ $t('nav.services') }}</a>
-          <a href="#about" class="nav-link">{{ $t('nav.about') }}</a>
-          <a href="#contact" class="nav-link">{{ $t('nav.contact') }}</a>
+          <router-link to="/" class="nav-link" active-class="active">{{ $t('nav.home') }}</router-link>
+          <router-link to="/services" class="nav-link" active-class="active">{{ $t('nav.services') }}</router-link>
+          <router-link to="/about" class="nav-link" active-class="active">{{ $t('nav.about') }}</router-link>
+          <router-link to="/contact" class="nav-link" active-class="active">{{ $t('nav.contact') }}</router-link>
         </nav>
         <div class="language-selector">
           <select :value="currentLanguage" @change="(event) => changeLanguage((event.target as HTMLSelectElement).value)">
@@ -54,17 +52,15 @@ const scrollToServices = () => {
       </div>
     </header>
 
-    <!-- 메인 배너 광고 -->
+    <!-- 메인 배너 -->
     <section class="hero-banner">
       <div class="banner-content">
         <div class="banner-text">
           <h2>{{ $t('hero.title') }}</h2>
           <p>{{ $t('hero.subtitle') }}</p>
-          <button class="cta-button" @click="scrollToServices">{{ $t('hero.cta') }}</button>
+          <button class="cta-button" @click="goServices">{{ $t('hero.cta') }}</button>
         </div>
-        <div class="banner-image">
-          <!-- 광고 placeholder 관련 코드 전체 삭제 -->
-        </div>
+        <div class="banner-image"></div>
       </div>
     </section>
 
@@ -75,7 +71,6 @@ const scrollToServices = () => {
         <div class="services-grid">
           <!-- Calculator37 서비스 -->
           <div class="service-card featured">
-            <div class="service-icon">🧮</div>
             <h3>Calculator37</h3>
             <p>{{ $t('services.calculator.description') }}</p>
             <div class="service-features">
@@ -83,45 +78,7 @@ const scrollToServices = () => {
               <span class="feature-tag">{{ $t('services.calculator.features.advanced') }}</span>
               <span class="feature-tag">{{ $t('services.calculator.features.history') }}</span>
             </div>
-            <router-link to="/calculator37" class="service-button">{{ $t('services.calculator.use') }}</router-link>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 사이드 광고 -->
-    <aside class="side-ads">
-      <div class="ad-card">
-        <div class="ad-content">
-          <span class="ad-label">{{ $t('ad.label') }}</span>
-          <div class="ad-placeholder-small">
-            <span>160x600</span>
-          </div>
-        </div>
-      </div>
-      <div class="ad-card">
-        <div class="ad-content">
-          <span class="ad-label">{{ $t('ad.label') }}</span>
-          <div class="ad-placeholder-small">
-            <span>160x600</span>
-          </div>
-        </div>
-      </div>
-    </aside>
-
-    <!-- 하단 광고 -->
-    <section class="bottom-ads">
-      <div class="container">
-        <div class="ad-banner">
-          <div class="ad-text">
-            <h3>{{ $t('bottom.ad.title') }}</h3>
-            <p>{{ $t('bottom.ad.subtitle') }}</p>
-          </div>
-          <div class="ad-action">
-            <div class="ad-placeholder-horizontal">
-              <span>{{ $t('ad.label') }}</span>
-              <small>728x90</small>
-            </div>
+            <router-link to="/calculator37/basic" class="service-button">{{ $t('services.calculator.use') }}</router-link>
           </div>
         </div>
       </div>
@@ -138,16 +95,16 @@ const scrollToServices = () => {
           <div class="footer-section">
             <h4>{{ $t('footer.services') }}</h4>
             <ul>
-              <li><router-link to="/calculator37">Calculator37</router-link></li>
+              <li><router-link to="/calculator37/basic">Calculator37</router-link></li>
             </ul>
           </div>
           <div class="footer-section">
             <h4>{{ $t('footer.support') }}</h4>
             <ul>
-              <li><a href="#">{{ $t('footer.support.contact') }}</a></li>
-              <li><a href="#">{{ $t('footer.support.faq') }}</a></li>
-              <li><a href="#">{{ $t('footer.support.terms') }}</a></li>
-              <li><a href="#">{{ $t('footer.support.privacy') }}</a></li>
+              <li><a href="#" @click.prevent>{{ $t('footer.support.contact') }}</a></li>
+              <li><a href="#" @click.prevent>{{ $t('footer.support.faq') }}</a></li>
+              <li><a href="#" @click.prevent>{{ $t('footer.support.terms') }}</a></li>
+              <li><a href="#" @click.prevent>{{ $t('footer.support.privacy') }}</a></li>
             </ul>
           </div>
         </div>
@@ -160,5 +117,5 @@ const scrollToServices = () => {
 </template>
 
 <style scoped>
-/* 컴포넌트별 스타일이 필요한 경우 여기에 추가 */
+/* 기존 스타일 유지 */
 </style>
