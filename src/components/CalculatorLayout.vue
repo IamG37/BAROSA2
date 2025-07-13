@@ -76,13 +76,14 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useLanguageStore } from '@/stores/language'
+import type { LanguageCode } from '@/locales'
 
 const languageStore = useLanguageStore()
 const currentLanguage = computed(() => languageStore.currentLanguage)
 const $t = languageStore.t
 
 const changeLanguage = (lang: string) => {
-  languageStore.changeLanguage(lang)
+  languageStore.changeLanguage(lang as LanguageCode)
 }
 </script>
 

@@ -3,12 +3,13 @@
 import { onMounted } from 'vue'
 import { useLanguageStore } from '@/stores/language'
 import { ref } from 'vue'
+import type { LanguageCode } from '@/locales'
 
 const languageStore = useLanguageStore()
-const currentLanguage = ref('ko')
+const currentLanguage = ref<LanguageCode>('ko')
 
 const changeLanguage = () => {
-  languageStore.changeLanguage(currentLanguage.value)
+  languageStore.changeLanguage(currentLanguage.value as LanguageCode)
 }
 
 const $t = languageStore.t

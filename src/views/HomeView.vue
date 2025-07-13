@@ -2,6 +2,7 @@
 import { useLanguageStore } from '@/stores/language'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
+import type { LanguageCode } from '@/locales'
 
 const languageStore = useLanguageStore()
 const currentLanguage = computed(() => languageStore.currentLanguage)
@@ -9,7 +10,7 @@ const $t = languageStore.t
 const router = useRouter()
 
 const changeLanguage = (lang: string) => {
-  languageStore.changeLanguage(lang)
+  languageStore.changeLanguage(lang as LanguageCode)
 }
 
 const goServices = () => {
