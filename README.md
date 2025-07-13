@@ -46,6 +46,31 @@ npm run build
 
 # GitHub Pages 배포
 npm run deploy
+
+## 🌐 배포 및 도메인
+
+### 🚀 자동 배포
+- **GitHub Actions**: main 브랜치에 push할 때마다 자동 배포
+- **도메인**: https://barosa.shop
+- **배포 스크립트**: `npm run deploy:full`
+
+### 📋 배포 방법
+```bash
+# 전체 배포 (권장)
+npm run deploy:full
+
+# 수동 배포
+npm run deploy:manual
+
+# 원격 저장소 설정
+npm run deploy:setup
+```
+
+### 🔧 배포 설정
+- **GitHub 저장소**: https://github.com/IamG37/BAROSA2
+- **GitHub Pages**: 자동 빌드 및 배포
+- **커스텀 도메인**: barosa.shop (CNAME 설정 완료)
+- **SSL**: GitHub에서 자동 발급
 ```
 
 ## 🏗️ 프로젝트 구조

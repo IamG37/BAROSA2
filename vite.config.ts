@@ -13,7 +13,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/barosa-vue/', // GitHub Pages 배포를 위한 base path
+  base: '/', // 커스텀 도메인을 위한 base path
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

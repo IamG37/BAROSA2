@@ -11,7 +11,10 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "dev": "vite",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "deploy:manual": "npm run build && gh-pages -d dist --repo https://github.com/IamG37/BAROSA2.git",
+    "deploy:setup": "git remote add origin https://github.com/IamG37/BAROSA2.git || git remote set-url origin https://github.com/IamG37/BAROSA2.git",
+    "deploy:full": "./scripts/deploy.sh"
   },
   "dependencies": {
     "@vueuse/head": "^2.0.0",
