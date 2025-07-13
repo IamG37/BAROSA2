@@ -71,6 +71,12 @@ npm run deploy:setup
 - **GitHub Pages**: 자동 빌드 및 배포
 - **커스텀 도메인**: barosa.shop (CNAME 설정 완료)
 - **SSL**: GitHub에서 자동 발급
+
+### 🔄 백업 시스템
+- **백업 저장소**: https://github.com/IamG37/BAROSAv2
+- **백업 URL**: https://iamg37.github.io/BAROSAv2
+- **백업 스크립트**: `npm run deploy:backup`
+- **백업 가이드**: [BACKUP.md](./BACKUP.md)
 ```
 
 ## 🏗️ 프로젝트 구조
