@@ -14,7 +14,9 @@
     "deploy": "npm run build && gh-pages -d dist",
     "deploy:manual": "npm run build && gh-pages -d dist --repo https://github.com/IamG37/BAROSA2.git",
     "deploy:setup": "git remote add origin https://github.com/IamG37/BAROSA2.git || git remote set-url origin https://github.com/IamG37/BAROSA2.git",
-    "deploy:full": "./scripts/deploy.sh"
+    "deploy:full": "./scripts/deploy.sh",
+    "deploy:backup": "./scripts/deploy-backup.sh",
+    "backup:push": "git push backup main"
   },
   "dependencies": {
     "@vueuse/head": "^2.0.0",
