@@ -26,6 +26,25 @@ Value: iamg37.github.io
 TTL: 3600
 ```
 
+**참고**: 일부 도메인 제공업체에서는 루트 도메인(@)에 CNAME을 설정할 수 없을 수 있습니다. 
+이 경우 A 레코드를 사용하세요:
+
+```
+Type: A
+Name: @
+Value: 185.199.108.153
+TTL: 3600
+```
+
+또는
+
+```
+Type: A
+Name: @
+Value: 185.199.109.153
+TTL: 3600
+```
+
 ### 2. GitHub 저장소 설정
 1. GitHub 저장소로 이동
 2. Settings > Pages
