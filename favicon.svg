@@ -1,1 +1,10 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="barosa-favicon-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#barosa-favicon-bg)"/>
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" font-size="38" font-family="'Noto Sans KR', Arial, sans-serif" font-weight="bold" fill="#fff">B</text>
+</svg> 
