@@ -205,6 +205,7 @@ export default {
   "gradians": "Gradi Centesimali",
 
   // Sezione Informazioni
+  "about.description": "Un hub che offre i migliori servizi. Migliora la tua esperienza digitale con strumenti web selezionati con cura.",
   "about.performance.title": "Prestazioni elevate",
   "about.performance.desc": "Sperimenta un lavoro rapido ed efficiente con strumenti web ottimizzati.",
   "about.security.title": "Servizio sicuro",

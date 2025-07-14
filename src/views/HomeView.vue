@@ -108,36 +108,36 @@ const goContact = () => {
           <div class="about-text">
             <h2 class="about-title">BAROSA.shop</h2>
             <p class="about-description">
-              최고의 서비스를 제공하는 상가 허브. 엄선된 웹 도구들로 당신의 디지털 경험을 한 단계 높입니다.
+              {{ $t('about.description') }}
             </p>
             <div class="about-features">
               <div class="feature-item">
                 <div class="feature-icon">
                   <Zap class="icon" />
                 </div>
-                <h3>빠른 성능</h3>
-                <p>최적화된 웹 도구로 빠르고 효율적인 작업을 경험하세요</p>
+                <h3>{{ $t('about.performance.title') }}</h3>
+                <p>{{ $t('about.performance.desc') }}</p>
               </div>
               <div class="feature-item">
                 <div class="feature-icon">
                   <Shield class="icon" />
                 </div>
-                <h3>안전한 서비스</h3>
-                <p>보안을 최우선으로 하는 안전한 웹 도구를 제공합니다</p>
+                <h3>{{ $t('about.security.title') }}</h3>
+                <p>{{ $t('about.security.desc') }}</p>
               </div>
               <div class="feature-item">
                 <div class="feature-icon">
                   <Lightbulb class="icon" />
                 </div>
-                <h3>혁신적인 기능</h3>
-                <p>최신 기술을 활용한 혁신적인 기능으로 업무 효율성을 높입니다</p>
+                <h3>{{ $t('about.innovation.title') }}</h3>
+                <p>{{ $t('about.innovation.desc') }}</p>
               </div>
               <div class="feature-item">
                 <div class="feature-icon">
                   <Users class="icon" />
                 </div>
-                <h3>사용자 중심</h3>
-                <p>사용자 경험을 최우선으로 하는 직관적이고 편리한 인터페이스</p>
+                <h3>{{ $t('about.user.title') }}</h3>
+                <p>{{ $t('about.user.desc') }}</p>
               </div>
             </div>
           </div>

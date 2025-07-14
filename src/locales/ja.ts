@@ -205,6 +205,7 @@ export default {
   "gradians": "グラード",
 
   // 概要セクション
+  "about.description": "最高のサービスを提供する商業ハブ。厳選されたウェブツールであなたのデジタル体験をさらに高めます。",
   "about.performance.title": "高速パフォーマンス",
   "about.performance.desc": "最適化されたウェブツールで迅速かつ効率的に作業できます。",
   "about.security.title": "安全なサービス",

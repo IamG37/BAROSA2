@@ -205,14 +205,15 @@ export default {
   "gradians": "Gradient",
 
   // Über uns Abschnitt
+  "about.description": "Ein Hub, der die besten Dienstleistungen bietet. Verbessern Sie Ihr digitales Erlebnis mit sorgfältig ausgewählten Web-Tools.",
   "about.performance.title": "Hohe Leistung",
-  "about.performance.desc": "Erleben Sie schnelle und effiziente Arbeit mit optimierten Webtools.",
+  "about.performance.desc": "Erleben Sie schnelle und effiziente Arbeit mit optimierten Web-Tools.",
   "about.security.title": "Sicherer Service",
-  "about.security.desc": "Wir bieten sichere Webtools mit höchster Priorität auf Sicherheit.",
+  "about.security.desc": "Wir bieten sichere Web-Tools mit höchster Priorität auf Sicherheit.",
   "about.innovation.title": "Innovative Funktionen",
   "about.innovation.desc": "Steigern Sie Ihre Produktivität mit innovativen Funktionen und neuester Technologie.",
   "about.user.title": "Benutzerzentriert",
-  "about.user.desc": "Intuitive und praktische Oberfläche mit Fokus auf Benutzererlebnis.",
+  "about.user.desc": "Intuitive und praktische Benutzeroberfläche mit Fokus auf Benutzererfahrung.",
 
   // Kontakt
   "contact.title": "Kontakt",

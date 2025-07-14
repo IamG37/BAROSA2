@@ -205,6 +205,7 @@ export default {
   "gradians": "Grades",
 
   // Section À propos
+  "about.description": "Un hub offrant les meilleurs services. Améliorez votre expérience numérique avec des outils web soigneusement sélectionnés.",
   "about.performance.title": "Haute performance",
   "about.performance.desc": "Travaillez rapidement et efficacement avec des outils web optimisés.",
   "about.security.title": "Service sécurisé",

@@ -205,6 +205,7 @@ export default {
   "gradians": "Gradianes",
 
   // Sección Acerca de
+  "about.description": "Un centro que ofrece los mejores servicios. Mejora tu experiencia digital con herramientas web seleccionadas cuidadosamente.",
   "about.performance.title": "Alto Rendimiento",
   "about.performance.desc": "Experimenta un trabajo rápido y eficiente con herramientas web optimizadas.",
   "about.security.title": "Servicio Seguro",

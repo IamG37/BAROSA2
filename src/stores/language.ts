@@ -3,7 +3,22 @@ import { ref } from 'vue'
 import { translations, type LanguageCode } from '@/locales'
 
 export const useLanguageStore = defineStore('language', () => {
-  const currentLanguage = ref<LanguageCode>('ko')
+  const getDefaultLanguage = (): LanguageCode => {
+    // 1. localStorage 우선
+    const savedLanguage = localStorage.getItem('language') as LanguageCode
+    if (savedLanguage && translations[savedLanguage]) {
+      return savedLanguage
+    }
+    // 2. 브라우저 언어 감지
+    const browserLang = navigator.language.split('-')[0] as LanguageCode
+    if (translations[browserLang]) {
+      return browserLang
+    }
+    // 3. 지원하지 않으면 영어
+    return 'en'
+  }
+
+  const currentLanguage = ref<LanguageCode>(getDefaultLanguage())
 
   function changeLanguage(lang: LanguageCode) {
     currentLanguage.value = lang
@@ -32,12 +47,6 @@ export const useLanguageStore = defineStore('language', () => {
     }
     
     return value
-  }
-
-  // Initialize language from localStorage
-  const savedLanguage = localStorage.getItem('language') as LanguageCode
-  if (savedLanguage && translations[savedLanguage]) {
-    currentLanguage.value = savedLanguage
   }
 
   return {

@@ -205,6 +205,7 @@ export default {
   "gradians": "그래드",
 
   // 소개 섹션
+  "about.description": "최고의 서비스를 제공하는 상가 허브. 엄선된 웹 도구들로 당신의 디지털 경험을 한 단계 높입니다.",
   "about.performance.title": "빠른 성능",
   "about.performance.desc": "최적화된 웹 도구로 빠르고 효율적인 작업을 경험하세요",
   "about.security.title": "안전한 서비스",
