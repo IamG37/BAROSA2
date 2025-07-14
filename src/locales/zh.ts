@@ -202,5 +202,21 @@ export default {
   "mMinus": "M-",
   "degrees": "度",
   "radians": "弧度",
-  "gradians": "百分度"
+  "gradians": "百分度",
+
+  // 关于部分
+  "about.performance.title": "高性能",
+  "about.performance.desc": "通过优化的网络工具体验快速高效的工作。",
+  "about.security.title": "安全服务",
+  "about.security.desc": "我们以安全为首要任务，提供安全的网络工具。",
+  "about.innovation.title": "创新功能",
+  "about.innovation.desc": "利用最新技术的创新功能提升工作效率。",
+  "about.user.title": "以用户为中心",
+  "about.user.desc": "以用户体验为首要的直观便捷界面。",
+
+  // 联系我们
+  "contact.title": "联系我们",
+  "contact.subtitle": "如果您对BAROSA.shop有任何疑问或反馈，欢迎随时联系我们。",
+  "contact.email.title": "邮件联系",
+  "contact.email.desc": "最快的联系方式。"
 } 

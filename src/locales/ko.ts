@@ -202,5 +202,21 @@ export default {
   "mMinus": "M-",
   "degrees": "도",
   "radians": "라디안",
-  "gradians": "그래드"
+  "gradians": "그래드",
+
+  // 소개 섹션
+  "about.performance.title": "빠른 성능",
+  "about.performance.desc": "최적화된 웹 도구로 빠르고 효율적인 작업을 경험하세요",
+  "about.security.title": "안전한 서비스",
+  "about.security.desc": "보안을 최우선으로 하는 안전한 웹 도구를 제공합니다",
+  "about.innovation.title": "혁신적인 기능",
+  "about.innovation.desc": "최신 기술을 활용한 혁신적인 기능으로 업무 효율성을 높입니다",
+  "about.user.title": "사용자 중심",
+  "about.user.desc": "사용자 경험을 최우선으로 하는 직관적이고 편리한 인터페이스",
+
+  // 문의하기
+  "contact.title": "문의하기",
+  "contact.subtitle": "BAROSA.shop에 대한 문의사항이나 피드백이 있으시면 언제든 연락주세요.",
+  "contact.email.title": "이메일로 문의",
+  "contact.email.desc": "가장 빠른 방법으로 문의하실 수 있습니다."
 } 

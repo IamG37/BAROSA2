@@ -202,5 +202,21 @@ export default {
   "mMinus": "M-",
   "degrees": "度",
   "radians": "ラジアン",
-  "gradians": "グラード"
+  "gradians": "グラード",
+
+  // 概要セクション
+  "about.performance.title": "高速パフォーマンス",
+  "about.performance.desc": "最適化されたウェブツールで迅速かつ効率的に作業できます。",
+  "about.security.title": "安全なサービス",
+  "about.security.desc": "セキュリティを最優先した安全なウェブツールを提供します。",
+  "about.innovation.title": "革新的な機能",
+  "about.innovation.desc": "最新技術を活用した革新的な機能で業務効率を高めます。",
+  "about.user.title": "ユーザー中心",
+  "about.user.desc": "ユーザー体験を最優先した直感的で便利なインターフェース。",
+
+  // お問い合わせ
+  "contact.title": "お問い合わせ",
+  "contact.subtitle": "BAROSA.shopに関するご質問やフィードバックがございましたら、いつでもご連絡ください。",
+  "contact.email.title": "メールでお問い合わせ",
+  "contact.email.desc": "最も迅速にお問い合わせいただけます。"
 } 

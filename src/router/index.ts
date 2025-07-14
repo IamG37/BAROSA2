@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ContactView from '../views/ContactView.vue'
 import BasicCalculator from '../components/calculators/BasicCalculator.vue'
 import ScientificCalculator from '../components/calculators/ScientificCalculator.vue'
 import UnitCalculator from '../components/calculators/UnitCalculator.vue'
@@ -26,7 +27,7 @@ const router = createRouter({
     {
       path: '/contact',
       name: 'contact',
-      component: HomeView // 추후 ContactView로 교체 가능
+      component: ContactView
     },
     {
       path: '/calculator37/basic',
@@ -49,6 +50,18 @@ const router = createRouter({
       component: FinancialCalculator
     }
   ]
+})
+
+// 라우터 변경 시 스크롤을 맨 위로 이동
+router.beforeEach((to, from, next) => {
+  if (to.path === '/contact') {
+    next()
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 100)
+  } else {
+    next()
+  }
 })
 
 export default router

@@ -202,5 +202,21 @@ export default {
   "mMinus": "M-",
   "degrees": "Grados",
   "radians": "Radianes",
-  "gradians": "Gradianes"
+  "gradians": "Gradianes",
+
+  // Sección Acerca de
+  "about.performance.title": "Alto Rendimiento",
+  "about.performance.desc": "Experimenta un trabajo rápido y eficiente con herramientas web optimizadas.",
+  "about.security.title": "Servicio Seguro",
+  "about.security.desc": "Ofrecemos herramientas web seguras priorizando la seguridad.",
+  "about.innovation.title": "Funciones Innovadoras",
+  "about.innovation.desc": "Mejora tu productividad con funciones innovadoras y tecnología de vanguardia.",
+  "about.user.title": "Centrado en el Usuario",
+  "about.user.desc": "Interfaz intuitiva y conveniente priorizando la experiencia del usuario.",
+
+  // Contacto
+  "contact.title": "Contacto",
+  "contact.subtitle": "Si tienes preguntas o comentarios sobre BAROSA.shop, contáctanos en cualquier momento.",
+  "contact.email.title": "Contacto por Correo",
+  "contact.email.desc": "La forma más rápida de contactarnos."
 } 
